@@ -20,11 +20,11 @@ form.addEventListener("submit", function(e) {
     const nameInput = document.querySelector('[name="studentName"]');
     const classInput = document.querySelector('[name="studentClass"]');
 
-    data.studentName = nameInput ? nameInput.value.trim() : "";
+    
     data.studentClass = classInput ? classInput.value.trim() : "";
 
     if(data.studentName==="" || data.studentClass===""){
-        errorMessage.textContent="⚠️ اكتب الاسم والصف";
+        errorMessage.textContent="⚠️ اكتب الصف";
         return;
     }
 
@@ -68,3 +68,4 @@ form.addEventListener("submit", function(e) {
     document.getElementById("thankyou-section").classList.remove("hidden");
 
 });
+
